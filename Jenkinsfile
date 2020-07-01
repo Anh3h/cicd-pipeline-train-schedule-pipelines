@@ -4,7 +4,7 @@ pipeline {
     stage ("Build project") {
       steps {
         sh './gradlew build'
-        achiveArtifacts artifacts: 'dist/trainSchedule.zip'
+        archiveArtifacts artifacts: 'dist/trainSchedule.zip'
       }
     }
   }
